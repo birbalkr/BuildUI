@@ -1,69 +1,241 @@
-# React + TypeScript + Vite
+# BuildUI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BuildUI is a collection of reusable **React + TypeScript + Tailwind CSS UI components, animations, layouts, and interaction patterns**.
 
-Currently, two official plugins are available:
+The main idea is simple:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> **Find → Preview → Copy → Paste → Customize → Build**
 
-## Expanding the ESLint configuration
+BuildUI helps developers build modern interfaces faster without creating every UI component from scratch.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 What is BuildUI?
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+BuildUI provides ready-to-use and customizable UI components for React projects.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### UI Components
+
+- Buttons
+- Cards
+- Inputs
+- Forms
+- Selects
+- Checkboxes
+- Radio Buttons
+- Switches
+- Sliders
+- Modals
+- Dialogs
+- Drawers
+- Dropdowns
+- Tooltips
+- Popovers
+- Alerts
+- Toasts
+- Notifications
+- Tabs
+- Accordions
+- Breadcrumbs
+- Pagination
+- Tables
+- Data Tables
+- Lists
+- Avatars
+- Badges
+- Progress Bars
+- Spinners
+- Skeletons
+- Calendars
+- Carousels
+- Image Galleries
+- File Uploads
+- Search
+- Filters
+- Command Menus
+- Pricing Cards
+- Statistics Cards
+- Timelines
+- Charts
+
+---
+
+## ✨ Animations
+
+BuildUI also contains reusable UI animations and micro-interactions.
+
+- Fade In
+- Fade Out
+- Slide In
+- Slide Out
+- Scale
+- Zoom
+- Bounce
+- Shake
+- Hover Effects
+- Button Animations
+- Card Animations
+- Text Animations
+- Loading Animations
+- Skeleton Animations
+- Scroll Animations
+- Stagger Animations
+- Page Transitions
+- Micro Interactions
+
+---
+
+## 🛒 E-Commerce UI
+
+- Product Cards
+- Product Grid
+- Product Details
+- Product Gallery
+- Product Filters
+- Product Search
+- Shopping Cart
+- Cart Items
+- Checkout
+- Order Summary
+- Order Tracking
+- Wishlist
+- Pricing Cards
+- Coupon Input
+
+---
+
+## 🔐 Authentication UI
+
+- Login
+- Signup
+- Forgot Password
+- Reset Password
+- OTP Verification
+- Email Verification
+- Password Change
+- User Profile
+- Authentication States
+
+---
+
+## 📊 Dashboard UI
+
+- Dashboard Layouts
+- Statistics Cards
+- Charts
+- Tables
+- Analytics
+- Activity Feed
+- Recent Orders
+- User Management
+- Settings
+- Notifications
+
+---
+
+## 📢 Marketing UI
+
+- Hero Sections
+- Feature Sections
+- Testimonials
+- Pricing Sections
+- FAQ
+- CTA Sections
+- Logo Cloud
+- Newsletter
+- Team Sections
+- Contact Sections
+
+---
+
+# 📦 Copy & Paste
+
+👨‍💻 How to Use a Component
+
+1. Find a component
+
+Choose the component you want to use.
+
+1. Preview
+
+Check how the component looks and behaves.
+
+1. Copy
+
+Copy the React/TypeScript source code.
+
+1. Paste
+
+Add it to your own project.
+
+Example:
+
+```
+src/
+└── components/
+    └── Button.tsx
+ ```
+
+1. Install dependencies
+
+If the component requires an external library, install the required dependency.
+
+1. Customize
+
+Change the Tailwind CSS classes and component logic according to your project.
+
+1. Use it
+
+```
+import { Button } from "./components/Button";
+function App() {
+  return (
+    <div>
+      <Button />
+    </div>
+  );
+}
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🎨 Customize the Design
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+BuildUI components are designed to be customized.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+You can change:
+
+Colors
+Fonts
+Typography
+Spacing
+Border Radius
+Shadows
+Icons
+Sizes
+Animations
+Responsive Behavior
+Dark/Light Themes
+Example
+
+Original:
+
 ```
+<button className="rounded-lg bg-black px-5 py-2 text-white">
+  Click Me
+</button>
+```
+
+Customize:
+
+```
+<button className="rounded-full bg-blue-600 px-6 py-3 text-white shadow-lg">
+  Click Me
+</button>
+```
+
+The component can be changed according to your own design system.
+
+# 📌 Project Status
+
+## 🚧 BuildUI is currently under active development.
+
+More components, animations, layouts, and interaction patterns will be added over time.
