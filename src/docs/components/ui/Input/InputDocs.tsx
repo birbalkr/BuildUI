@@ -15,18 +15,18 @@ export function InputDocs() {
 
       <div className="space-y-10">
         <section>
-                  <h2 className="font-display text-lg font-semibold tracking-tight">
-                    Playground
-                  </h2>
-                  <p className="mt-2 max-w-lg text-sm leading-relaxed text-ink-soft">
-                    Change the props on the left, watch the real component and its
-                    output update on the right.
-                  </p>
-                  <div className="mt-4">
-                    <InputPlayground />
-                  </div>
-                </section>
-        
+          <h2 className="font-display text-lg font-semibold tracking-tight">
+            Playground
+          </h2>
+          <p className="mt-2 max-w-lg text-sm leading-relaxed text-ink-soft">
+            Change the props on the left, watch the real component and its
+            output update on the right.
+          </p>
+          <div className="mt-4">
+            <InputPlayground />
+          </div>
+        </section>
+
         <section>
           <h2 className="font-display text-lg font-semibold tracking-tight">
             Examples
@@ -87,7 +87,8 @@ export function InputDocs() {
         </section>
       </div>
 
-      <DocsPager prev={{ href: "/docs/button", label: "Button" }} />
+      <DocsPager prev={{ href: "/docs/button", label: "Button" }}
+        next={{ href: "/docs/alert", label: "Alert" }} />
     </div>
   );
 }
