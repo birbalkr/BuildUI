@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Link, Outlet, useLocation } from 'react-router';
 
 const nav = [
@@ -11,6 +11,7 @@ const nav = [
         items: [
             { href: "/docs/button", label: "Button" },
             { href: "/docs/input", label: "Input" },
+            { href: "/docs/alert", label: "Alert" },
         ],
     },
 ];
