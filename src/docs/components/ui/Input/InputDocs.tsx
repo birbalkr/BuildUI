@@ -36,7 +36,7 @@ export function InputDocs() {
             <Input
               label="Username"
               placeholder="taken"
-              error="This username is already taken"
+              // error="This username is already taken"
               size="md"
             />
           </div>
